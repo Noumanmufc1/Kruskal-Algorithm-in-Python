@@ -1,6 +1,7 @@
 class Kruskal:
     fathers, edges, mst = [], [], []
     noOfEdges, noOfVertices, mstEdges, mstWeight, mstNi = 0, 0, 0, 0, 0
+
     
     def find(self, x):
         if(self.fathers[x] == x):
@@ -73,8 +74,7 @@ class Kruskal:
             print("Edge between Vertex {} and Vertex {}. Weight = {}".format(self.edges[i][1][0], self.edges[i][1][1], self.edges[i][0]))   
     
              
-        
-        
+    
         
         
         

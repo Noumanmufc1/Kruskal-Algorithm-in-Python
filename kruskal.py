@@ -1,7 +1,6 @@
 class Kruskal:
     fathers, edges, mst = [], [], []
     noOfEdges, noOfVertices, mstEdges, mstWeight, mstNi = 0, 0, 0, 0, 0
-
     
     def find(self, x):
         if(self.fathers[x] == x):

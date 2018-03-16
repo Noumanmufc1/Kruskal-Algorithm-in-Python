@@ -1,4 +1,5 @@
 class Kruskal:
+    """Kruskal algorithm for finding the minimum spanning tree using union find."""  
     fathers, edges, mst = [], [], []
     noOfEdges, noOfVertices, mstEdges, mstWeight, mstNi = 0, 0, 0, 0, 0
     
@@ -30,10 +31,10 @@ class Kruskal:
         count = 0
         while(count < self.noOfEdges):
             try:
-                edge1 = int(input("Enter vertex 1 of edge {}: ".format(count + 1)))
-                edge2 = int(input("Enter vertex 2 of edge {}: ".format(count + 1)))
+                vertex1 = int(input("Enter vertex 1 of edge {}: ".format(count + 1)))
+                vertex2 = int(input("Enter vertex 2 of edge {}: ".format(count + 1)))
                 weight = int(input("Enter the weight between vertex number {} and vertex number {}: ".format(edge1, edge2)))
-                self.edges.append([weight,[edge1, edge2]])
+                self.edges.append([weight,[vertex1, vertex2]])
                 count += 1
             except:
                 print("Invalid Input. Try again")
